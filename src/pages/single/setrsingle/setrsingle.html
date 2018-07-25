@@ -1,0 +1,26 @@
+<!--
+  Generated template for the SetrsinglePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>setrsingle</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    无法返回到[单页面测试路由]页面！但是可以人为加入返回按钮；测试请点击下面的按钮<br/>
+  <hr/>
+  <hr/>
+  注意：setRoot()方法会将之前访问的所有页面记录全部销毁，然后重新记录。比如这次返回到[单页面测试路由]页面后，无法回到[路由学习]界面
+  <br/>
+  <h1> 获取参数：{{title}}</h1>
+
+
+  <button ion-button  (click)="openNextPage()" >返回单页面测试路由页面</button>
+</ion-content>

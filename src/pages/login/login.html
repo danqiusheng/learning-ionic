@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title align="center">
+      登录
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content margin-top="20%" (ionScroll)="false">
+  <form #loginForm="ngForm"   >
+
+    <ion-list>
+      <ion-item>
+        <ion-label floating>用户</ion-label>
+        <ion-input type="text"   required="required"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>密码</ion-label>
+        <ion-input type="password"  required="required"></ion-input>
+      </ion-item>
+
+      <!-- 假条目 用于控制输入框长度 -->
+      <ion-item hidden>
+        <ion-label   hidden>密码</ion-label>
+        <ion-input  hidden></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button color="primary" type="submit" block (click)="login()"  [disabled]="flag" round>登&nbsp;&nbsp;录</button>
+    </div>
+    <div padding>
+      <button ion-button color="primary" block (click)="setting()"  round>系统设置</button>
+    </div>
+
+  </form>
+</ion-content>
+<ion-footer align="center"  style="bottom: 0px;" >
+  <p>MES@云内V1.0</p>
+  <p>2018-2019@WYY有限公司</p>
+</ion-footer>
