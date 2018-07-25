@@ -1,0 +1,21 @@
+<!--
+  Generated template for the HelloPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>hello</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ Navigating from the Root Component
+  What if you want to control navigation from your root app component? You can’t inject NavController because any components that are navigation controllers are children of the root component so they aren’t available to be injected.
+
+  By adding a reference variable to the ion-nav, you can use @ViewChild to get an instance of the Nav component, which is a navigation controller (it extends NavController):
+</ion-content>
