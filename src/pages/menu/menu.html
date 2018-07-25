@@ -15,8 +15,11 @@
 
 <ion-content padding>
    点击不同的按钮，进入不同的页面进行路由模拟
-  <button ion-button (click)="openPage('SinglePage')">单页面路由</button>
-  <button ion-button (click)="openPage('TabsPage')">tab路由</button>
-  <button ion-button (click)="openPage('IndexPage')">侧边栏路由</button>
-  <button ion-button (click)="openPage('LoginPage')">测试登录页面</button>
+  <button ion-button (click)="openPage('SinglePage')">单页面路由</button><br/>
+  <button ion-button (click)="openPage('TabsPage')">tab路由</button><br/>
+  <button ion-button (click)="openPage('IndexPage')">侧边栏路由</button><br/>
+  <button ion-button (click)="openPage('IonavPage')">ion-nav(页面栈) 进行页面测试</button><br/>
+  <button ion-button (click)="openPage('RcomponentPage')">(从根组件导航）)Navigating from the Root Component页面测试</button><br/>
+  <button ion-button (click)="openPage('LoginPage')">测试登录页面</button><br/>
+  <button ion-button (click)="openPage('LifePage')">测试页面声明周期</button><br/>
 </ion-content>
