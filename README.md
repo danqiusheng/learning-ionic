@@ -166,7 +166,9 @@
 ### 3.4 总结
 >1.从某个界面push一个side界面，其实质同setRoot()方法是同样的，重新设置了根页面。如果从side的每个页面试图返回上一级，则会报导航栈至少需要一个root页面。
  
-## 四、参考资料
+## 四、环境说明
+![](./pic/env.png)
+## 五、参考资料
 
 https://ionicframework.com/docs/api/components/nav/NavPush/
 https://ionicframework.com/docs/api/components/nav/NavPop/
